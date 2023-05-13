@@ -191,10 +191,9 @@ html {
 
 @layer utilities {
   .user-effect {
-    @apply cursor-pointer outline-none ring-offset-1 transition-all focus-visible:ring-1 focus-visible:ring-primary;
+    /* @apply cursor-pointer outline-none ring-offset-1 transition-all focus-visible:ring-1 focus-visible:ring-primary; */
   }
   .strategy-input {
-    @apply w-full border outline-none ring-offset-0 transition-all placeholder:text-textInput-base-color invalid:border-default-red hover:border-transparent hover:ring-2 hover:ring-primary focus:border-transparent focus:ring-2 invalid:focus:ring-default-red;
+    /* @apply w-full border outline-none ring-offset-0 transition-all placeholder:text-textInput-base-color invalid:border-default-red hover:border-transparent hover:ring-2 hover:ring-primary focus:border-transparent focus:ring-2 invalid:focus:ring-default-red; */
   }
 }
-
