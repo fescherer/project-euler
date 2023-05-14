@@ -1,3 +1,5 @@
+import { ProblemList } from '@/features/ProblemList'
+
 export default function Home() {
-  return <span>dsadsa</span>
+  return <ProblemList />
 }
