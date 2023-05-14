@@ -1,77 +1,40 @@
-import Image from 'next/image'
-import { appConfig } from '@/utils/config'
-import { DeviceMobile  } from 'phosphor-react'
+'use client'
+
 import Link from 'next/link'
-import { Divider } from '../Primitives/Divider'
-import { ThemeButton } from './components/ThemeButton'
-import clsx from 'clsx'
-import { menu } from './data'
 import { CookieMessage } from './components/CookieMessage'
+import FSLogo from '@/Icons/FSLogo'
+import { ThemeButton } from './components/ThemeButton'
 
 export function Header() {
-
   return (
     <div className="bg-header-background px-5">
-      <header className="m-auto hidden max-w-[1300px] justify-between lg:flex">
-        <div className="flex items-center gap-8 py-5">
-          <Image
-            src="/logo.png"
-            width={117}
-            height={27}
-            alt={`Imagem logo de ${appConfig.app_name}`}
+      <header>
+        <div className="container mx-auto flex flex-wrap items-center justify-between">
+          <h1 className="text-title">
+            <Link href="/">
+              <FSLogo />
+            </Link>
+          </h1>
+
+          <div
+            data-collapse-toggle="navbar-default"
+            className="text-gray-500 ml-3 inline-flex items-center rounded-lg p-2 text-sm md:hidden"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+            aria-label=""
           />
 
-          <nav>
-            <ul className="flex gap-5 text-header-background-text">
-              {menu.map((item) => (
-                <li key={item.title}>
-                  {
-                    <Link
-                      className={clsx(
-                        'flex cursor-pointer items-center gap-1 text-sm font-bold uppercase transition-all hover:text-primary',
-                        { 'text-primary': item.title === 'Estratégias' }
-                      )}
-                      href={item.link}
-                      target={item.link ? '_blank' : '_self'}
-                    >
-                      {item.icon}
-                      {item.title}
-                    </Link>
-                  }
-                </li>
-              ))}
+          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul className="flex flex-col p-4 md:mt-0 md:flex-row md:space-x-8 md:text-2xl">
+              <li>
+                <input type="text" className="bg-primary" />
+              </li>
+              <li>
+                <ThemeButton />
+              </li>
             </ul>
-          </nav>
-        </div>
-
-        {/* config menu */}
-        <div className="flex -skew-x-[15deg] items-center bg-header-foreground px-5 text-header-foreground-text">
-          <div className="flex h-full skew-x-[15deg] items-center gap-5 p-3">
-            <Link
-              href="https://br.playscores.com/plataforma"
-              target="_blank"
-              className="flex h-full items-center gap-1 font-medium transition-all hover:text-header-text"
-            >
-              <DeviceMobile size={16} />
-              Vincular seu app
-            </Link>
-
-            <Divider dataOrientation="vertical" />
-            <Divider dataOrientation="vertical" />
-            <ThemeButton />
           </div>
         </div>
-      </header>
-
-      <header className="m-auto flex max-w-[1300px] items-center justify-between gap-8 py-5 text-header-background-text lg:hidden">
-
-        <Image
-          src="/logo.png"
-          width={117}
-          height={27}
-          alt={`Imagem logo de ${appConfig.app_name}`}
-        />
-        <div />
       </header>
 
       <CookieMessage />

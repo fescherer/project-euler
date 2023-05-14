@@ -1,3 +1,5 @@
+'use client'
+
 import { appConfig } from '@/utils/config'
 import { Moon, Sun } from 'phosphor-react'
 import { useEffect, useState } from 'react'
