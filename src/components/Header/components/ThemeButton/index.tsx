@@ -32,9 +32,7 @@ type ThemeButtonProps = {
   btnColor?: string
 }
 
-export function ThemeButton({
-  btnColor = 'text-header-icon-theme'
-}: ThemeButtonProps) {
+export function ThemeButton({ btnColor = 'text-primary' }: ThemeButtonProps) {
   const [theme, setTheme] = useState<string>('')
 
   useEffect(() => {
@@ -63,7 +61,11 @@ export function ThemeButton({
 
   return (
     <button onClick={handleTheme} className={btnColor}>
-      {theme === 'light' ? <Moon size={24} /> : <Sun size={24} />}
+      {theme === 'light' ? (
+        <Moon size={24} weight="fill" />
+      ) : (
+        <Sun size={24} weight="fill" />
+      )}
     </button>
   )
 }

@@ -1,6 +1,9 @@
+'use client'
+
 /* eslint-disable @next/next/no-page-custom-font */
 import { Header } from '@/components/Header'
 import './globals.css'
+import AppContextProvider from '@/context/app.context'
 
 export const metadata = {
   title: 'Create Next App',
@@ -56,8 +59,10 @@ export default function RootLayout({
       </head>
 
       <body>
-        <Header />
-        <main>{children}</main>
+        <AppContextProvider>
+          <Header />
+          <main>{children}</main>
+        </AppContextProvider>
       </body>
     </html>
   )

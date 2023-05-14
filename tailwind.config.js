@@ -12,25 +12,20 @@ module.exports = {
   ],
   theme: {
     colors: {
+      neutral: 'var(--neutral)',
+      black: 'var(--black)',
+      white: 'var(--white)',
       background: 'var(--background)',
-      'background-accent': 'var(--background-accent)',
       foreground: 'var(--foreground)',
-      'foreground-accent': 'var(--foreground-accent)',
-      primary: 'var(--primary)',
-      'primary-dark': 'var(--primary-dark)',
-      'primary-contrast': 'var(--primary-contrast)',
-      overlay: 'var(--black-overlay)'
+      disabled: 'var(--disabled)',
+      enabled: 'var(--enabled)',
+      text: 'var(--text)',
+      primary: 'var(--primary)'
     },
     fontFamily: {
       sans: ["'Darker Grotesque', sans-serif", ...defaultTheme.fontFamily.sans]
     },
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
-      }
-    }
+    extend: {}
   },
   plugins: []
 }
