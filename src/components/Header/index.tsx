@@ -8,8 +8,8 @@ import { SearchInput } from './components/SearchInput/SearchInput'
 
 export function Header() {
   return (
-    <div className="bg-header-background px-5">
-      <header className="flex flex-col">
+    <div className="bg-background-2 px-5">
+      <header className="m-auto flex max-w-screen-2xl flex-col">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <h1 className="text-title">
             <Link href="/" className="text-primary">
@@ -22,7 +22,7 @@ export function Header() {
               <li className="hidden w-full md:block md:w-auto">
                 <SearchInput />
               </li>
-              <li>
+              <li className="flex items-center">
                 <ThemeButton />
               </li>
             </ul>

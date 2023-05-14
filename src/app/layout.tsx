@@ -4,6 +4,7 @@
 import { Header } from '@/components/Header'
 import './globals.css'
 import AppContextProvider from '@/context/app.context'
+import { AsideBar } from '@/features/AsideBar'
 
 export const metadata = {
   title: 'Create Next App',
@@ -58,10 +59,13 @@ export default function RootLayout({
         />
       </head>
 
-      <body>
+      <body className="flex h-full w-full flex-col">
         <AppContextProvider>
           <Header />
-          <main>{children}</main>
+          <div className="m-auto flex h-full w-full max-w-screen-2xl">
+            <AsideBar />
+            <main>{children}</main>
+          </div>
         </AppContextProvider>
       </body>
     </html>

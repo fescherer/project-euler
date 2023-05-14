@@ -16,6 +16,8 @@ module.exports = {
       black: 'var(--black)',
       white: 'var(--white)',
       background: 'var(--background)',
+      'background-2': 'var(--background-2)',
+      'background-3': 'var(--background-3)',
       foreground: 'var(--foreground)',
       disabled: 'var(--disabled)',
       enabled: 'var(--enabled)',
