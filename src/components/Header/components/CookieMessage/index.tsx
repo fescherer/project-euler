@@ -31,7 +31,7 @@ export function CookieMessage() {
 
   return (
     <button
-      className="user-effect fixed bottom-6 left-6 z-50 flex w-72 flex-col gap-3 rounded-sm bg-foreground p-3 text-start text-strategy-card-text shadow-xl hover:ring-2 hover:ring-primary
+      className="fixed bottom-6 left-6 z-50 flex w-72 flex-col gap-3 rounded-sm bg-foreground p-3 text-start text-strategy-card-text shadow-xl hover:ring-2 hover:ring-primary
         "
       onClick={saveCookies}
       aria-label="Botão para fechar a mensagem de uso de cookie"
