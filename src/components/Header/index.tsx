@@ -5,25 +5,29 @@ import { CookieMessage } from './components/CookieMessage'
 import FSLogo from '@/Icons/FSLogo'
 import { ThemeButton } from './components/ThemeButton'
 import { SearchInput } from './components/SearchInput/SearchInput'
+import { MobileMenu } from './components/MobileMenu'
 
 export function Header() {
   return (
     <div className="bg-background-2 px-5">
       <header className="m-auto flex max-w-screen-2xl flex-col">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
-          <h1 className="text-title">
-            <Link href="/" className="text-primary">
+          <div className="text-title interaction">
+            <Link href="/" className="text-primary ">
               <FSLogo />
             </Link>
-          </h1>
+          </div>
 
           <div>
-            <ul className="flex flex-col p-4 md:mt-0 md:flex-row md:space-x-8 md:text-2xl">
+            <ul className="flex gap-2 p-4 md:mt-0 md:flex-row md:space-x-8 md:text-2xl">
               <li className="hidden w-full md:block md:w-auto">
                 <SearchInput />
               </li>
               <li className="flex items-center">
                 <ThemeButton />
+              </li>
+              <li className="block md:hidden">
+                <MobileMenu />
               </li>
             </ul>
           </div>

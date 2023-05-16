@@ -60,7 +60,7 @@ export function ThemeButton({ btnColor = 'text-primary' }: ThemeButtonProps) {
   }
 
   return (
-    <button onClick={handleTheme} className={btnColor}>
+    <button onClick={handleTheme} className={`interaction ${btnColor}`}>
       {theme === 'light' ? (
         <Moon size={24} weight="fill" />
       ) : (

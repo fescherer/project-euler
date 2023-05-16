@@ -1,11 +1,12 @@
 import { Children } from '@/@types/Util'
 import { SearchInputProvider } from './search.context'
+import { MobileMenuProvider } from './mobileMenu.context'
 
 export default function AppContextProvider({ children }: Children) {
   const components: Array<
     | React.JSXElementConstructor<React.PropsWithChildren<unknown>>
     | (({ children }: Children) => JSX.Element)
-  > = [SearchInputProvider]
+  > = [SearchInputProvider, MobileMenuProvider]
 
   return (
     <>

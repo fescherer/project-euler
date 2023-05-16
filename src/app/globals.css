@@ -85,4 +85,8 @@
     color: var(--text);
     height: 100%;
   }
+
+  .interaction {
+    @apply outline-none transition-all hover:scale-110 focus-visible:ring-2 focus-visible:ring-primary;
+  }
 }
