@@ -9,7 +9,7 @@ export function AsideBar() {
     { id: 2, title: 'Even Fibonacci nudasdasdasdasdasdasd' }
   ]
   return (
-    <aside className="h-full w-40 bg-background-3 p-3">
+    <aside className="hidden h-full w-40 bg-background-3 p-3 md:block">
       <h2 className="font-semibold uppercase">Project Euler</h2>
 
       <ul>
