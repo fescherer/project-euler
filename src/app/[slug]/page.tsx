@@ -5,6 +5,9 @@ import fs from 'fs'
 import Markdown from 'markdown-to-jsx'
 import { getDateFormated } from '@/utils/getDateFormated'
 import { CodeMarkdown } from '@/components/Markdown/Code'
+import { DetailsMarkdown } from '@/components/Markdown/Details'
+import { SummaryMarkdown } from '@/components/Markdown/Summary'
+import { AnchorMarkdown } from '@/components/Markdown/Anchor'
 
 type ProblemPageProps = {
   params: { id: any; slug: string }
@@ -44,9 +47,19 @@ export default async function ProblemPage({ params }: ProblemPageProps) {
           {`Solved at: ${getDateFormated(project.data.solved_at)}`}
         </span>
       </div>
-      <Markdown options={{ overrides: { code: { component: CodeMarkdown } } }}>
+      <Markdown
+        options={{
+          overrides: {
+            details: { component: DetailsMarkdown },
+            summary: { component: SummaryMarkdown },
+            a: { component: AnchorMarkdown },
+            code: { component: CodeMarkdown }
+          }
+        }}
+      >
         {project.content}
       </Markdown>
     </div>
   )
 }
+

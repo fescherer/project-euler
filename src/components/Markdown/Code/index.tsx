@@ -1,20 +1,11 @@
 'use client'
 
-import { appConfig } from '@/utils/config'
-import { useEffect, useState } from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus, vs } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { useThemeContext } from '@/context/theme.context'
 
 export function CodeMarkdown({ children }: any) {
-  const [theme, setTheme] = useState('')
-
-  useEffect(() => {
-    const storagedTheme = window.localStorage.getItem(
-      `${appConfig.app_slug}:theme`
-    )
-    setTheme(storagedTheme ?? 'dark')
-  }, [])
-
+  const { theme } = useThemeContext()
   return (
     <SyntaxHighlighter
       language="python"
@@ -24,3 +15,4 @@ export function CodeMarkdown({ children }: any) {
     </SyntaxHighlighter>
   )
 }
+
