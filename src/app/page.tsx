@@ -1,4 +1,4 @@
-// import { ProblemList } from '@/features/ProblemList'
+import { ProblemList } from '@/features/ProblemList'
 import { ProblemPage } from '@/features/ProblemPage'
 import { getProjectsMetadata } from '@/utils/getProjectMetadata'
 
@@ -7,8 +7,8 @@ export default function Home() {
   console.log(data)
   return (
     <>
-      {/* <ProblemList /> */}
-      <div>
+      <ProblemList />
+      {/* <div>
         {data.map((item) => (
           <div key={item.id} className="flex flex-col gap-1">
             <span>{item.title}</span>
@@ -19,7 +19,8 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <ProblemPage />
+      <ProblemPage /> */}
     </>
   )
 }
+

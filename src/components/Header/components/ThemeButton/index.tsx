@@ -1,5 +1,6 @@
 'use client'
 
+import { useThemeContext } from '@/context/theme.context'
 import { appConfig } from '@/utils/config'
 import { Moon, Sun } from 'phosphor-react'
 import { useEffect, useState } from 'react'
@@ -33,7 +34,7 @@ type ThemeButtonProps = {
 }
 
 export function ThemeButton({ btnColor = 'text-primary' }: ThemeButtonProps) {
-  const [theme, setTheme] = useState<string>('')
+  const { setTheme, theme } = useThemeContext()
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -69,3 +70,4 @@ export function ThemeButton({ btnColor = 'text-primary' }: ThemeButtonProps) {
     </button>
   )
 }
+
