@@ -1,25 +1,28 @@
 ---
 id: 1
 slug: 01_multiples_of_3_or_5
-created_at: '2021-11-25T10:00:00.000Z'
-solved_at: '2022-11-02T10:00:00.000Z'
+created_at: '2001-10-05T06:00:00.000Z'
+solved_at: '2023-05-30T18:00:00.000Z'
 title: Multiples of 3 or 5
 difficult: 5
 ---
 
-Este é um repositório que contém todos os projetos realizados durante o periodo de assinatura da plataforma [Alura](https://www.alura.com.br)
+<p>If we list all the natural numbers below `10` that are multiples of `3` or `5`, we get `3, 5, 6` and `9`. The sum of these multiples is `23`.</p>
+<p>Find the sum of all the multiples of `3` or `5` below `1000`.</p>
 
 <details>
-<summary>Mostrar solução</summary>
+  <summary>Show Solution</summary>
 
-<code>
+  <code>
 
-print('a')
+  limit = 1000
+  sumN = 0
 
-def my_function():
-  print("Hello from a function")
+  for n in range(limit):
+      if( n % 3 == 0 or n % 5 == 0):
+          sumN += n
 
+  print(sumN)
 
-</code>
-
+  </code>
 </details>
