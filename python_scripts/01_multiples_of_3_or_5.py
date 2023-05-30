@@ -2,10 +2,10 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 limit = 1000
-sumN = 0
+result = 0
 
 for n in range(limit):
     if( n % 3 == 0 or n % 5 == 0):
-        sumN += n
+        result += n
 
-print(sumN)
+print(result)

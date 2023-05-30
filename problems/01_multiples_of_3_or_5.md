@@ -15,14 +15,14 @@ difficult: 5
 
   <code>
 
-  limit = 1000
-  sumN = 0
+    limit = 1000
+    result = 0
 
-  for n in range(limit):
-      if( n % 3 == 0 or n % 5 == 0):
-          sumN += n
+    for n in range(limit):
+        if( n % 3 == 0 or n % 5 == 0):
+            result += n
 
-  print(sumN)
+    print(result)
 
   </code>
 </details>
