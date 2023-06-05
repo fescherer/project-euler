@@ -3,7 +3,7 @@
 import { useThemeContext } from '@/context/theme.context'
 import { appConfig } from '@/utils/config'
 import { Moon, Sun } from 'phosphor-react'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect } from 'react'
 
 const themes = ['dark', 'light']
 
@@ -36,24 +36,27 @@ type ThemeButtonProps = {
 export function ThemeButton({ btnColor = 'text-primary' }: ThemeButtonProps) {
   const { setTheme, theme } = useThemeContext()
 
+  const setNewTheme = useCallback(
+    (newTheme: string) => {
+      window.localStorage.setItem(`${appConfig.app_slug}:theme`, newTheme)
+      window.document.documentElement.setAttribute('data-theme', newTheme)
+      setTheme(newTheme)
+    },
+    [setTheme]
+  )
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const savedTheme =
         window.document.documentElement.getAttribute('data-theme')
       savedTheme && setTheme(savedTheme)
     }
-  }, [])
+  }, [setTheme])
 
   useEffect(() => {
     const savedTheme = loadTheme()
     setNewTheme(savedTheme)
-  }, [])
-
-  function setNewTheme(newTheme: string) {
-    window.localStorage.setItem(`${appConfig.app_slug}:theme`, newTheme)
-    window.document.documentElement.setAttribute('data-theme', newTheme)
-    setTheme(newTheme)
-  }
+  }, [setNewTheme])
 
   function handleTheme() {
     const newTheme = theme === 'light' ? 'dark' : 'light'

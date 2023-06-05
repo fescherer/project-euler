@@ -1,5 +1,4 @@
 import { ProblemList } from '@/features/ProblemList'
-import { ProblemPage } from '@/features/ProblemPage'
 import { getProjectsMetadata } from '@/utils/getProjectMetadata'
 
 export default function Home() {

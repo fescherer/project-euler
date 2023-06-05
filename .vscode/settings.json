@@ -1,11 +1,13 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  "eslint.run": "onSave",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "javascript.autoClosingTags": true,
   "typescript.autoClosingTags": true,
+  "eslint.validate": ["javascript"],
   "editor.quickSuggestions": {
     "strings": true
   },
@@ -16,6 +18,16 @@
     "ngClass",
     "additionalClasses",
     "color"
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "css.lint.unknownAtRules": "ignore",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#000000",
+    "titleBar.activeForeground": "#FFFFFF",
+    "titleBar.inactiveBackground": "#000000",
+    "titleBar.inactiveForeground": "#dbdbdb",
+    "sash.hoverBorder": "#000000"
+  }
 }
 
