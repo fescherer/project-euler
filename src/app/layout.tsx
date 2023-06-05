@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import { Header } from '@/components/Header'
+import { Layout } from '@/components/Layout'
 import './globals.css'
-import AppContextProvider from '@/context/app.context'
-import { AsideBar } from '@/features/AsideBar'
-import { Overlay } from '@/components/Overlay'
 
 export const metadata = {
   title: 'Create Next App',
@@ -59,15 +56,7 @@ export default function RootLayout({
       </head>
 
       <body className="flex h-full w-full flex-col">
-        <AppContextProvider>
-          <Overlay />
-          <Header />
-          <div className="m-auto flex h-full w-full max-w-screen-2xl">
-            <AsideBar />
-
-            <main>{children}</main>
-          </div>
-        </AppContextProvider>
+        <Layout>{children}</Layout>
       </body>
     </html>
   )
