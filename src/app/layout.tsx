@@ -1,5 +1,3 @@
-'use client'
-
 /* eslint-disable @next/next/no-page-custom-font */
 import { Header } from '@/components/Header'
 import './globals.css'
@@ -74,3 +72,4 @@ export default function RootLayout({
     </html>
   )
 }
+
