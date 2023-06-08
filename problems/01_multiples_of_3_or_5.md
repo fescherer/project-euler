@@ -11,7 +11,7 @@ difficult: 5
 <p>Find the sum of all the multiples of `3` or `5` below `1000`.</p>
 
 <details>
-  <summary>Show Solution</summary>
+  <summary>Solution</summary>
 
   <code>
 
@@ -26,3 +26,4 @@ difficult: 5
 
   </code>
 </details>
+

@@ -17,7 +17,7 @@ difficult: 5
 <p>By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
 
 <details>
-  <summary>Mostrar solução</summary>
+  <summary>Solution</summary>
 
   <code>
 
@@ -29,7 +29,7 @@ difficult: 5
     result = 0
 
     while z < limit:
-        
+
         z = x + y
         if(z % 2 == 0):
             result = result + z
