@@ -1,11 +1,13 @@
 'use client'
 
+import { ProjectMetadata } from '@/@types/Metadata'
 import { ProblemCard } from '@/components/ProblemCard'
-import { useState } from 'react'
 
-export function ProblemList() {
-  const [list] = useState(['11', '12', '13', '14', '15', '16', '17'])
+type ProblemListProps = {
+  data: ProjectMetadata[]
+}
 
+export function ProblemList({ data }: ProblemListProps) {
   return (
     <div className="m-5 flex flex-col gap-10">
       <div>
@@ -17,8 +19,8 @@ export function ProblemList() {
       </div>
 
       <div className="flex flex-wrap justify-center gap-5">
-        {list.map((item) => (
-          <ProblemCard key={item} />
+        {data.map((item) => (
+          <ProblemCard key={item.id} card={item} />
         ))}
       </div>
     </div>

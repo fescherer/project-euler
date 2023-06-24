@@ -36,9 +36,7 @@ export default function RootLayout({
 
         <link
           rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="https://projecteuler.net/favicons/favicon-32x32.png"
+          href="https://user-images.githubusercontent.com/62115215/232942205-6d7ae99f-0644-41d4-8b06-91022a1b3359.svg"
         />
 
         <link
