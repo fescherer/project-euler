@@ -1,3 +1,5 @@
+'use client'
+
 import { useMobileMenu } from '@/context/mobileMenu.context'
 
 export function Overlay() {
@@ -13,4 +15,3 @@ export function Overlay() {
     </>
   )
 }
-

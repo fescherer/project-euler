@@ -1,3 +1,5 @@
+'use client'
+
 import { Children } from '@/@types/Util'
 import React from 'react'
 

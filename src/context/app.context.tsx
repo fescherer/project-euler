@@ -1,3 +1,5 @@
+'use client'
+
 import { Children } from '@/@types/Util'
 import { SearchInputProvider } from './search.context'
 import { MobileMenuProvider } from './mobileMenu.context'
