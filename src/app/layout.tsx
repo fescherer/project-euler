@@ -35,6 +35,13 @@ export default function RootLayout({
         />
 
         <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="https://projecteuler.net/favicons/favicon-32x32.png"
+        />
+
+        <link
           rel="preconnect"
           href="https://user-images.githubusercontent.com"
         />
@@ -61,4 +68,3 @@ export default function RootLayout({
     </html>
   )
 }
-
