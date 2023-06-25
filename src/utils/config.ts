@@ -9,6 +9,7 @@ export const appConfig = {
       width: '1200',
       height: '630',
       alt: 'Project Euler Solved by Felipe Scherer'
-    }
+    },
+    relCanonical: 'project-euler.felipescherer.com'
   }
 }
