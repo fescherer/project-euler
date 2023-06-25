@@ -23,11 +23,10 @@
   "css.lint.unknownAtRules": "ignore",
   "editor.cursorSmoothCaretAnimation": "on",
   "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#000000",
-    "titleBar.activeForeground": "#FFFFFF",
-    "titleBar.inactiveBackground": "#000000",
-    "titleBar.inactiveForeground": "#dbdbdb",
-    "sash.hoverBorder": "#000000"
+    "titleBar.activeBackground": "#2b2b2b",
+    "titleBar.activeForeground": "#3092f0",
+    "titleBar.inactiveBackground": "#2b2b2b",
+    "titleBar.inactiveForeground": "#3092f0",
+    "sash.hoverBorder": "#2b2b2b"
   }
 }
-
