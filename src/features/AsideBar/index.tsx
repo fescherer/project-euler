@@ -17,9 +17,9 @@ export function AsideBar({ data }: AsideBarProps) {
 
   return (
     <aside
-      className={clsx('h-auto w-40 bg-background-3 p-3', {
-        'absolute right-0 top-0 md:block': mobileMenu,
-        'hidden md:block': !mobileMenu
+      className={clsx('w-40 bg-background-3 p-3', {
+        'absolute right-0 top-0 h-full md:block': mobileMenu,
+        'hidden h-auto md:block ': !mobileMenu
       })}
     >
       <h2 className="font-semibold uppercase">Project Euler</h2>
