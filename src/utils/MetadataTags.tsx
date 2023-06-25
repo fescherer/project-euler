@@ -48,6 +48,7 @@ export function MetadataTags() {
       />
 
       <meta property="twitter:url" content={appConfig.metada.relCanonical} />
+      <link rel="canonical" href={appConfig.metada.relCanonical} />
     </>
   )
 }
