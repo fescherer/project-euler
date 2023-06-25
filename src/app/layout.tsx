@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import { Layout } from '@/components/Layout'
 import './globals.css'
+import { MetadataTags } from '@/utils/MetadataTags'
 
 export const metadata = {
   title: 'Project Euler | Felipe Scherer',
@@ -48,16 +49,15 @@ export default function RootLayout({
           href="https://user-images.githubusercontent.com"
         />
 
-        <meta
-          name="theme-color"
-          media="(prefers-color-scheme: light)"
-          content="cyan"
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg" sizes="any" />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon.png"
+          type="image/png"
+          sizes="any"
         />
-        <meta
-          name="theme-color"
-          media="(prefers-color-scheme: dark)"
-          content="black"
-        />
+        <MetadataTags />
       </head>
 
       <body className="flex h-auto min-h-full w-full flex-col">
