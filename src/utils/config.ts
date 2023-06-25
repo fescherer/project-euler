@@ -4,7 +4,7 @@ export const appConfig = {
   metada: {
     'og-graph': {
       image:
-        'https://github.com/playscores/livescores-front/assets/62115215/08159883-6ae6-4996-88bd-6753e5406add',
+        'https://github.com/ofelipescherer/project-euler/assets/62115215/673dbc0b-20f8-41f1-a535-9acf977a07e6',
       type: 'png',
       width: '1200',
       height: '630',

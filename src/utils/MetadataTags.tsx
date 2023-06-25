@@ -46,6 +46,8 @@ export function MetadataTags() {
         property="og:image:alt"
         content={appConfig.metada['og-graph'].alt}
       />
+
+      <meta property="twitter:url" content={appConfig.relCanonical} />
     </>
   )
 }
