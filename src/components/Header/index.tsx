@@ -10,7 +10,7 @@ import { MobileMenu } from './components/MobileMenu'
 export function Header() {
   return (
     <div className="bg-background-2 px-5">
-      <header className="m-auto flex max-w-screen-2xl flex-col">
+      <header className="m-auto flex max-w-screen-xl flex-col">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <div className="text-title interaction">
             <Link href="/" className="text-primary ">

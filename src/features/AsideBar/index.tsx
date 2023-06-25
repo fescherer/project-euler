@@ -17,7 +17,7 @@ export function AsideBar({ data }: AsideBarProps) {
 
   return (
     <aside
-      className={clsx('h-full w-40 bg-background-3 p-3', {
+      className={clsx('h-auto w-40 bg-background-3 p-3', {
         'absolute right-0 top-0 md:block': mobileMenu,
         'hidden md:block': !mobileMenu
       })}

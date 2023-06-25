@@ -15,10 +15,10 @@ export function Layout({ children }: LayoutProps) {
     <AppContextProvider>
       <Overlay />
       <Header />
-      <div className="m-auto flex h-full w-full max-w-screen-2xl">
+      <div className="m-auto flex h-full w-full max-w-screen-xl">
         <AsideBar data={data} />
 
-        <main>{children}</main>
+        <main className="flex w-full">{children}</main>
       </div>
     </AppContextProvider>
   )

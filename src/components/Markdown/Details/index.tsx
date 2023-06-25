@@ -1,6 +1,7 @@
 export function DetailsMarkdown({ children }: any) {
-  console.log(children)
   return (
-    <details className="flex rounded-md bg-foreground p-3">{children}</details>
+    <details className="my-3 flex rounded-md bg-foreground p-3">
+      {children}
+    </details>
   )
 }

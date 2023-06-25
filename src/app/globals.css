@@ -83,7 +83,9 @@
     scroll-behavior: smooth;
     background-color: var(--background);
     color: var(--text);
-    height: 100%;
+    display: flex;
+    min-height: 100%;
+    height: auto;
   }
 
   .interaction {

@@ -7,14 +7,14 @@ title: Multiples of 3 or 5
 difficult: 5
 ---
 
-<p>If we list all the natural numbers below `10` that are multiples of `3` or `5`, we get `3, 5, 6` and `9`. The sum of these multiples is `23`.</p>
-<p>Find the sum of all the multiples of `3` or `5` below `1000`.</p>
+<p>If we list all the natural numbers below <strong>10</strong> that are multiples of <strong>3</strong> or <strong>5</strong>, we get <strong>3, 5, 6<strong> and <strong>9</strong>. The sum of these multiples is <strong>23</strong>.<p>
+<p>Find the sum of all the multiples of <strong>3</strong> or <strong>5</strong> below <strong>1000</strong>.<p>
+
 
 <details>
   <summary>Solution</summary>
 
-  <code>
-
+  ```
     limit = 1000
     result = 0
 
@@ -23,7 +23,6 @@ difficult: 5
             result += n
 
     print(result)
-
-  </code>
+   ```
 </details>
 

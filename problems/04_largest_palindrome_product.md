@@ -13,6 +13,6 @@ difficult: 5
 <details>
   <summary>Solution</summary>
 
-  <code>
-  </code>
+  ```
+  ```
 </details>

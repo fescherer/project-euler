@@ -15,4 +15,3 @@ export function CodeMarkdown({ children }: any) {
     </SyntaxHighlighter>
   )
 }
-

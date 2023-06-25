@@ -2,14 +2,10 @@ import { ProjectMetadata } from '@/@types/Metadata'
 import { getProjectsMetadata } from '@/utils/getProjectMetadata'
 import matter, { GrayMatterFile } from 'gray-matter'
 import fs from 'fs'
-import Markdown from 'markdown-to-jsx'
-import { getDateFormated } from '@/utils/getDateFormated'
-import { CodeMarkdown } from '@/components/Markdown/Code'
-import { DetailsMarkdown } from '@/components/Markdown/Details'
-import { SummaryMarkdown } from '@/components/Markdown/Summary'
-import { AnchorMarkdown } from '@/components/Markdown/Anchor'
 
-type ProblemPageProps = {
+import { ProblemPage } from '@/features/ProblemPage'
+
+type ProblemProps = {
   params: { id: any; slug: string }
 }
 
@@ -28,38 +24,8 @@ async function getProject(slug: string): Promise<GrayMatterFile<string>> {
   return matterResult
 }
 
-export default async function ProblemPage({ params }: ProblemPageProps) {
+export default async function Problem({ params }: ProblemProps) {
   const project = await getProject(params.slug)
 
-  return (
-    <div className="flex flex-col gap-5 p-5">
-      <div className="flex flex-col gap-1 font-bold">
-        <h1 className="text-3xl">
-          {`#${project.data.id.toString().padStart(2, '0')} - ${
-            project.data.title
-          }`}
-        </h1>
-
-        <span className="text-xs">
-          {`Created at: ${getDateFormated(project.data.created_at)}`}
-        </span>
-        <span className="text-xs">
-          {`Solved at: ${getDateFormated(project.data.solved_at)}`}
-        </span>
-      </div>
-      <Markdown
-        options={{
-          overrides: {
-            details: { component: DetailsMarkdown },
-            summary: { component: SummaryMarkdown },
-            a: { component: AnchorMarkdown },
-            code: { component: CodeMarkdown }
-          }
-        }}
-      >
-        {project.content}
-      </Markdown>
-    </div>
-  )
+  return <ProblemPage project={project} />
 }
-

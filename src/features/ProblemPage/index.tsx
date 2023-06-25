@@ -1,26 +1,36 @@
-export function ProblemPage() {
+import matter from 'gray-matter'
+import Markdown from 'markdown-to-jsx'
+import { getDateFormated } from '@/utils/getDateFormated'
+import { customRenderers } from './customRender'
+
+type ProblemPageProps = {
+  project: matter.GrayMatterFile<string>
+}
+
+export function ProblemPage({ project }: ProblemPageProps) {
   return (
-    <div className="m-5 flex flex-col gap-10 font-bold">
-      <div className="flex flex-col">
-        <h2 className="text-3xl">#01 - Multiples of 3 or 5</h2>
-        <span className="text-sm">Created at 13/05/2023</span>
-        <span className="text-sm">Solved at 13/05/2023</span>
-      </div>
+    <div className="flex w-full flex-col gap-5 p-5">
+      <div className="flex flex-col gap-1 font-bold">
+        <h1 className="text-3xl">
+          {`#${project.data.id.toString().padStart(2, '0')} - ${
+            project.data.title
+          }`}
+        </h1>
 
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis
-          tincidunt eros. Duis elementum viverra pulvinar. Curabitur ultrices
-          sem sed risus condimentum varius ut laoreet metus. Nulla varius, orci
-          porta aliquet placerat, elit massa vulputate purus, vitae elementum
-          tortor odio sed urna. Morbi sagittis, mi ut fermentum gravida, lacus
-          lacus luctus tellus, nec volutpat massa tellus id turpis. In aliquet
-          enim a nisl imperdiet, eu molestie lectus laoreet. Sed vitae mauris
-          luctus, viverra justo vel, luctus ante. Vivamus at fringilla lorem.
-        </p>
-
-        <div />
+        <span className="text-xs">
+          {`Created at: ${getDateFormated(project.data.created_at)}`}
+        </span>
+        <span className="text-xs">
+          {`Solved at: ${getDateFormated(project.data.solved_at)}`}
+        </span>
       </div>
+      <Markdown
+        options={{
+          overrides: customRenderers
+        }}
+      >
+        {project.content}
+      </Markdown>
     </div>
   )
 }

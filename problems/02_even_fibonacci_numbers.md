@@ -19,8 +19,7 @@ difficult: 5
 <details>
   <summary>Solution</summary>
 
-  <code>
-
+  ```
     limit = 4000000
 
     x = 1
@@ -38,6 +37,5 @@ difficult: 5
         y = z
 
     print(result)
-
-  </code>
+  ```
 </details>
