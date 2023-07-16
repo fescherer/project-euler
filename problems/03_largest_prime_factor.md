@@ -14,6 +14,29 @@ difficult: 5
 <details>
   <summary>Solution</summary>
 
-  ```
+  The first thing you should think of is that you need to find what prime numbers are made from the specific number, first try to divide as much as possible by 2, that way you now can divide only by odd numbers, because if the number you trying to divide is even, this already will be processed on the division by 2.
+
+  And what about for 9 for example? 9 will never be counted as prime number in this algorithm because will be divided by 3 earlier. This is not the most efficient way to do, but is simple and very interesting.
+
+  ```python
+  primeFactors = []
+  result = 30
+  multiply = 2
+
+  while result % multiply == 0:
+    result = result / multiply
+    primeFactors.append(multiply)
+
+  multiply += 1
+
+  while result != 1:
+    if(result % multiply != 0):
+      multiply += 2
+    else:
+      primeFactors.append(multiply)
+      result = result / multiply
+
+  print('The prime factors are', primeFactors)
+  print('The largest prime factor is', multiply)
   ```
 </details>

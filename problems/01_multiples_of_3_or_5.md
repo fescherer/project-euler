@@ -14,7 +14,7 @@ difficult: 5
 <details>
   <summary>Solution</summary>
 
-  ```
+  ```python
     limit = 1000
     result = 0
 

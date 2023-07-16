@@ -19,7 +19,7 @@ difficult: 5
 <details>
   <summary>Solution</summary>
 
-  ```
+  ```python
     limit = 4000000
 
     x = 1
