@@ -150,7 +150,7 @@ And don't forget to leave a star on the project if you liked it 🤩
 
 ## ⚖️ License ⚖️
 
-Distributed under the MIT License. See [License](LICENSE.md) for more information.
+Distributed under the MIT License. See [License](LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,16 +160,7 @@ Distributed under the MIT License. See [License](LICENSE.md) for more informatio
 
 ## 💬 Contact me 💬
 
-My name is Felipe Scherer and you can find me at:
-
-<div align="center">
-
-[![Youtube][youtube-shield]][youtube-url]
-[![Linkedin][linkedin-shield]][linkedin-url]
-[![Github][github-shield]][github-url]
-
-</div>
-
+My name is Felipe Scherer. You can find my socials at [my Github profile](https://github.com/fescherer) 😸
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,7 +198,7 @@ My name is Felipe Scherer and you can find me at:
 [issues-shield]: https://img.shields.io/github/issues/ofelipescherer/project-euler.svg?style=for-the-badge
 [issues-url]: https://github.com/ofelipescherer/project-euler/issues
 [license-shield]: https://img.shields.io/github/license/ofelipescherer/project-euler.svg?style=for-the-badge
-[license-url]: https://github.com/ofelipescherer/project-euler/blob/master/LICENSE.md
+[license-url]: https://github.com/ofelipescherer/project-euler/blob/master/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0E76A8
 [linkedin-url]: https://www.linkedin.com/in/ofelipescherer
