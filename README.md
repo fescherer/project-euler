@@ -175,36 +175,12 @@ My name is Felipe Scherer. You can find my socials at [my Github profile](https:
 [info-issues-shield]: https://img.shields.io/badge/🐞-How%20to%20create%20an%20issue-blue.svg?style=for-the-badge
 [info-issues-url]: https://github.com/fescherer/utils/blob/main/ISSUE.md
 
-<<<<<<< HEAD
 <!-- https://github.com/Ileriayo/markdown-badges -->
 [vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
 [vite-url]: https://vitejs.dev
 [reactjs]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
 [html-5]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-=======
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ofelipescherer/project-euler.svg?style=for-the-badge
-[contributors-url]: https://github.com/ofelipescherer/project-euler/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ofelipescherer/project-euler.svg?style=for-the-badge
-[forks-url]: https://github.com/ofelipescherer/project-euler/network/members
-[stars-shield]: https://img.shields.io/github/stars/ofelipescherer/project-euler.svg?style=for-the-badge
-[stars-url]: https://github.com/ofelipescherer/project-euler/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ofelipescherer/project-euler.svg?style=for-the-badge
-[issues-url]: https://github.com/ofelipescherer/project-euler/issues
-[license-shield]: https://img.shields.io/github/license/ofelipescherer/project-euler.svg?style=for-the-badge
-[license-url]: https://github.com/ofelipescherer/project-euler/blob/master/LICENSE
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0E76A8
-[linkedin-url]: https://www.linkedin.com/in/ofelipescherer
-[youtube-shield]: https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white
-[youtube-url]: https://www.youtube.com/channel/UCySqmz_Rohnl53VLoNQsnKg
-[github-shield]: https://img.shields.io/badge/Github-000000?style=for-the-badge&logo=github&logoColor=white
-[github-url]: https://github.com/ofelipescherer
-
-[HTML 5]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
->>>>>>> 30cc4ae9850fbd80fbb2086104a980bb8b2566d3
 [html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [css-3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
