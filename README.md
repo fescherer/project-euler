@@ -7,7 +7,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
+ 
   <br />
   <a href="https://github.com/ofelipescherer/project-euler">
     <img src="https://projecteuler.net/favicons/favicon-32x32.png" alt="Logo" width="80" height="80">
